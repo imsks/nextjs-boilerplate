@@ -1,0 +1,31 @@
+.footer {
+  &__container {
+    padding: 1rem 0;
+    background-color: $color-black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    &__content {
+      justify-content: space-around;
+      display: flex;
+      align-items: center;
+
+      &__text {
+        color: $color-white;
+
+        @include respond(small-phone) {
+          font-size: 1.3rem;
+        }
+
+        span {
+          color: $color-primary;
+        }
+
+        a {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

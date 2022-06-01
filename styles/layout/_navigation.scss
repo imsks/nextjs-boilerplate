@@ -1,0 +1,22 @@
+.navbar {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    width: 60%;
+    margin: auto;
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
+
+    &__logo {
+      width: 10rem;
+    }
+  }
+}
